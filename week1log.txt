@@ -1,0 +1,42 @@
+Week 1 Development Log
+Course: CAP6415
+1. Selection of Project Topic
+In Week 1, I chose a topic for my final project based on the 1980 paper
+“Neocognitron: A Self-organizing Neural Network Model for a Mechanism of
+“Pattern Recognition Unaffected by Shift in Position” by Kunihiko Fukushima.
+This paper is remarkable since it introduces the early architectural concepts.
+That later inspired Convolutional Neural Networks (CNNs).
+The aim of the project is to study, understand, and re-implement the Neocognitron.
+using modern tools while demonstrating its position-invariant recognition.
+capability, and comparing it to contemporary CNNs.
+
+2. Paper Study and Technical Review
+I downloaded the original paper and began a detailed reading.
+focusing on understanding:
+• The hierarchical S- and C-layers that mimic simple and complex cells.
+• Cell-planes: The idea of this concept is that each plane extracts a different feature.
+• Unsupervised, "learning without a teacher," driving self-organization.
+• Mathematical formulations of S-cell outputs, C-cell outputs, inhibition,
+and receptive fields.
+• The reinforcement rule governing how modifiable synapses evolve.
+How the neocognitron achieves position invariance.
+I took structured notes, identifying each mathematical component required.
+
+implementation, and mapped them onto possible PyTorch equivalents.
+3. Initial Implementation Planning
+I drafted the high-level structure for the implementation:
+• A modular architecture representing U0 → S1 → C1 → S2 → C2 → S3 → C3.
+• Classes for S-layer modules and C-layer modules.
+• Data structures for storing modifiable synapses, i.e., trainable parameters
+and unmodifiable synapses (fixed kernels).
+• A training loop for unsupervised self-organization.
+I also analyzed how to handle:
+• r.m.s.-type inhibitory cells,
+• lateral inhibition,
+• feature extraction within planes,
+• representative cell selection during learning.
+4. Setting Up the Repository
+I created a public GitHub repository following project instructions with the
+exact format:
+CAP6415_F25_project-Neocognitron
+Inside the repository, I initialized: • A README.md that includes project title, objective and overview.
