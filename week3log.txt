@@ -1,6 +1,6 @@
 Week 3 Progress (Ending Nov 23):
 
-During Week 3, our team focused on building the core architecture and preparing the project environment. The major accomplishments are listed below:
+During Week 3, we team focused on building the core architecture and preparing the project environment. The major accomplishments are listed below:
 
 Model Development
 * Implemented the main components of the Neocognitron-style network using PyTorch.
