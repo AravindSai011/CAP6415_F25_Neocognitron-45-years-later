@@ -5,7 +5,7 @@ This project revisits the Neocognitron (Fukushima, 1980), one of the earliest ne
 * Language: Python
 * Libraries: PyTorch, TorchVision, NumPy, Matplotlib
 
-## code Overview
+## Code Overview
 * Implementation of a Neocognitron-inspired convolutional network
 * Training and evaluation scripts for MNIST
 * Visualization utilities for feature maps and translation-invariance tests
