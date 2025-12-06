@@ -1,1 +1,34 @@
-Week 3 Progress (Ending Nov 23):During Week 3, our team focused on building the core architecture and preparing the project environment. The major accomplishments are listed below:Model Development* Implemented the main components of the Neocognitron-style network using PyTorch.* Designed S-layers and C-layers following Fukushima’s hierarchical structure.* Combined the layers into the full pipeline: S1 ? C1 ? S2 ? C2 ? S3 ? C3.* Verified the forward pass to ensure correct tensor shapes and stable outputs.Dataset Preparation* Set up the MNIST dataset loader with normalization and batching.* Verified that training and testing samples were loading correctly.* Ensured consistent preprocessing for reproducible experiments.Training & Evaluation Setup* Created the initial structure for the training loop, including loss calculation and optimizer configuration.* Added accuracy tracking and evaluation logic (to be fully executed in Week 4).* Prepared a modular training script for clean experiment management.Repository Organization* Structured the project into separate modules:o models_neocognitron.pyo data_dataset_loader.pyo train.pyo eval.pyo demo.py* Created a clear folder layout for results and logs.* Improved readability and maintainability of the project codebase.SummaryBy the end of Week 3, the model architecture, dataset pipeline, and training framework were fully prepared, positioning the team to begin full training and experimental analysis in Week 4.
+Week 3 Progress (Ending Nov 23):
+
+During Week 3, our team focused on building the core architecture and preparing the project environment. The major accomplishments are listed below:
+
+Model Development
+* Implemented the main components of the Neocognitron-style network using PyTorch.
+* Designed S-layers and C-layers following Fukushima√ïs hierarchical structure.
+* Combined the layers into the full pipeline: S1 ? C1 ? S2 ? C2 ? S3 ? C3.
+* Verified the forward pass to ensure correct tensor shapes and stable outputs.
+
+Dataset Preparation
+* Set up the MNIST dataset loader with normalization and batching.
+* Verified that training and testing samples were loading correctly.
+* Ensured consistent preprocessing for reproducible experiments.
+
+Training & Evaluation Setup
+* Created the initial structure for the training loop, including loss calculation and optimizer configuration.
+* Added accuracy tracking and evaluation logic (to be fully executed in Week 4).
+* Prepared a modular training script for clean experiment management.
+
+Repository Organization
+* Structured the project into separate modules:
+  o models_neocognitron.py
+  o data_dataset_loader.py
+  o train.py
+  o eval.py
+  o demo.py
+* Created a clear folder layout for results and logs.
+* Improved readability and maintainability of the project codebase.
+
+Summary
+
+By the end of Week 3, the model architecture, dataset pipeline, and training framework were fully prepared, positioning the team to begin full training and experimental analysis in Week 4.
+
