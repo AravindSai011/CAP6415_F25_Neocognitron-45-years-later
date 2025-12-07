@@ -1,1 +1,11 @@
+WEEK 2 LOG (Ending November 16)
 
+During Week 2, we focused on deeper research and preparing core project components. We studied S-cells and C-cells in more detail, including how excitatory and inhibitory regions interact and how local pooling leads to shift invariance. We also researched how to emulate lateral inhibition using fixed or handcrafted convolution kernels in PyTorch.
+
+We implemented the MNIST dataloaders in dataset.py, including transforms, normalization, batching, and splitting into training, validation, and test sets. We verified that the dataloaders worked correctly by printing sample batch shapes and testing with the training loop.
+
+We also expanded train.py by implementing a structured training loop, validation evaluation, accuracy tracking, and checkpoint saving. These components were designed to work with both the modern CNN and the Neocognitron-inspired model that we planned to implement.
+
+We refined the project README to better communicate our goals and began outlining how we would integrate both models into the same training and evaluation framework.
+
+Overall, Week 2 focused on research, planning the model architecture, and building the dataset and training infrastructure.
