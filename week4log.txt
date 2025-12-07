@@ -1,32 +1,19 @@
 Week 4 Progress (Ending Nov 30):
 
-During Week 4, we focused on training the model, generating preliminary results, and creating visualizations required for analysis.
+Week 4 was dedicated to generating preliminary results and refining our models. We improved the lateral inhibition mechanism by designing a Gaussian-based inhibition mask to more closely replicate biological center-surround behavior. This improved model stability during training.
 
-Model Training
-* Completed the full training loop implementation.
-* Added validation monitoring and model checkpoint saving.
-* Trained the Neocognitron-style model for several epochs on MNIST.
-* Achieved strong initial accuracy, confirming stable learning performance.
+We ran full training sessions for both models. The Modern CNN achieved approximately 98% test accuracy on MNIST, while the Neocognitron-inspired model achieved strong performance as well, around 97–98%, depending on hyperparameters. We tuned batch size, learning rate, and weight initialization to improve consistency across runs.
 
-Evaluation & Demo Development
-* Finalized the evaluation script for testing on the MNIST test set.
-* Implemented the demo script to generate predicted images with labels.
-* Saved demo outputs in the results/demo/ directory for documentation and final presentation.
+We implemented the evaluation pipeline in eval.py, including:
 
-Visualization Work
-* Generated training curves (accuracy and loss) and saved them under results/graphs/.
-* Extracted feature maps from S-layers and C-layers using the extended forward method.
-* Stored visualizations in results/feature_maps/, showing hierarchical feature extraction patterns.
+generating the confusion matrix
 
-Translation-Invariance Experiment
-* Performed a translation experiment by shifting digits and analyzing output stability.
-* Produced heatmaps demonstrating improved positional robustness in deeper C-layers.
-* Saved results under results/invariance/, supporting the theoretical motivation of the Neocognitron.
+visualizing sample predictions
 
-Documentation Updates
-* Updated the README with a clean abstract, usage instructions, and folder structure.
-* Ensured that the repository met reproducibility and clarity requirements.
+exporting prediction images
 
-Summary
-By the end of Week 4, we completed model training, produced key experimental results, created visualizations, and documented the project structure. The project is now ready for Week 5 activities, including final experiments and video demo preparation.
+confirming the best_model.pth loads correctly
 
+We added the training_loss_curve.png and training_accuracy_curve.png files to the results/ folder and updated the README to include final training and evaluation instructions.
+
+Week 4 delivered the first complete set of preliminary results and validated that both models trained and generalized successfully.
