@@ -1,9 +1,7 @@
-Week 1 Log (Ending November 9)
+Week 1 focused on establishing the foundation for our project. We began by reviewing the project guidelines and understanding the required timeline, deliverables, and expectations. We created the public GitHub repository named “CAP6415_F25_Neocognitron-45-years-later” and organized it with the proper initial structure, including the src/ folder, results/ folder, and weekly log files.
 
-This week focused on setting up the foundation for the entire course project. After reviewing the project guidelines, I created the public GitHub repository “CAP6415_F25_Neocognitron-45-years-later” and verified that it displays correctly in a clean, organized structure. I added an initial README.md along with empty directories for src/, results/, and logs, preparing the structure that the final project will follow.
+We studied Fukushima’s original 1980 Neocognitron paper to understand the biological concepts behind S-cells, C-cells, and hierarchical feature extraction. We reviewed additional online resources and modern interpretations to better connect the Neocognitron to current computer vision techniques.
 
-I studied the original paper by Fukushima (1980) to understand the biological principles behind the Neocognitron, including S-cells, C-cells, and the concept of hierarchical feature extraction. I also reviewed secondary resources explaining the architecture to better plan how to reconstruct the model using modern computer vision tools.
+On the technical side, we set up our development environment using Python, PyTorch, and VS Code. We confirmed that our environment could download and load MNIST, and we prepared the initial outline of the README.md file. We also created a clear roadmap for the project: implementing a modern CNN baseline and a Neocognitron-inspired model with lateral inhibition and comparing their results.
 
-On the engineering side, I set up my working environment using Python 3.10, PyTorch, and VS Code. I tested GPU/CPU availability and installed all required packages. I drafted the first version of the project description and clarified which components needed to be implemented from scratch.
-
-Finally, I outlined the model roadmap: (1) implement a simple baseline CNN, (2) implement the Neocognitron-inspired S/C-layer architecture, (3) train both models on MNIST, (4) generate results and comparisons. This week was primarily research, planning, and repository preparation.
+Overall, Week 1 focused on research, planning, environment setup, and repository preparation.
