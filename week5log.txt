@@ -1,0 +1,9 @@
+WEEK 5 LOG (Ending December 7)
+
+Week 5 focused on refining the entire project and preparing for final submission. We cleaned and documented all Python scripts, adding comments and clarifications to model.py, train.py, eval.py, dataset.py, and utils.py to ensure the code is easy for the TA to understand and run. We confirmed that the project executes end-to-end without errors on a fresh environment.
+
+We regenerated final training results, updated the results/ folder, and polished the README to include installation instructions, repository structure, training commands, evaluation commands, and a project summary. We also verified reproducibility by running both training and evaluation again from scratch.
+
+This week, we also prepared and recorded our final project demo video. In the video, we explained the project motivation, repository structure, architecture details, training process, evaluation outputs, and discussed future improvements and limitations.
+
+Week 5 completed all required documentation, testing, video recording, and preparation for submission.
