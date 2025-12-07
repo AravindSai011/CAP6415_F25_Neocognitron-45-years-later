@@ -1,34 +1,8 @@
 Week 3 Progress (Ending Nov 23):
+In Week 3, our primary focus was implementing both model architectures. We started by coding the Modern CNN baseline in model.py. This model included convolutional layers, batch normalization, pooling, and fully connected layers. We tested it through the training script and ensured that the forward and backward passes executed correctly.
 
-During Week 3, we team focused on building the core architecture and preparing the project environment. The major accomplishments are listed below:
+Next, we implemented the Neocognitron-inspired S-cell and C-cell layers. For S-cells, we used a learnable excitatory convolution followed by a fixed surround-inhibition kernel to simulate biological lateral inhibition. For C-cells, we used max pooling to mirror the spatial tolerance described in Fukushima’s design. We assembled these layers into a working hierarchical model.
 
-Model Development
-* Implemented the main components of the Neocognitron-style network using PyTorch.
-* Designed S-layers and C-layers following FukushimaÕs hierarchical structure.
-* Combined the layers into the full pipeline: S1 ? C1 ? S2 ? C2 ? S3 ? C3.
-* Verified the forward pass to ensure correct tensor shapes and stable outputs.
+Debugging was a significant part of this week. We encountered issues with inconsistent tensor shapes, incorrect broadcasting of the inhibition filters, and activation scaling. After resolving these problems, we were able to run the first successful forward passes and preliminary training runs.
 
-Dataset Preparation
-* Set up the MNIST dataset loader with normalization and batching.
-* Verified that training and testing samples were loading correctly.
-* Ensured consistent preprocessing for reproducible experiments.
-
-Training & Evaluation Setup
-* Created the initial structure for the training loop, including loss calculation and optimizer configuration.
-* Added accuracy tracking and evaluation logic (to be fully executed in Week 4).
-* Prepared a modular training script for clean experiment management.
-
-Repository Organization
-* Structured the project into separate modules:
-  o models_neocognitron.py
-  o data_dataset_loader.py
-  o train.py
-  o eval.py
-  o demo.py
-* Created a clear folder layout for results and logs.
-* Improved readability and maintainability of the project codebase.
-
-Summary
-
-By the end of Week 3, the model architecture, dataset pipeline, and training framework were fully prepared, positioning the team to begin full training and experimental analysis in Week 4.
-
+Additionally, we implemented plotting utilities for visualizing training curves and prepared the results/ directory to store output images. Week 3 marked an important milestone where both the baseline and Neocognitron-style models became functional.
