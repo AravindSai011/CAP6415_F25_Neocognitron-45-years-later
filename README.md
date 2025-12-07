@@ -1,6 +1,15 @@
 # Neocognitron: 45 Years Later  
 # Rebuilding Fukushima’s 1980 Neocognitron using modern computer vision techniques
 
+## Abstract
+This project revisits Fukushima’s 1980 Neocognitron through a modern computer vision lens.  
+We implement two models using PyTorch:  
+(1) a modern CNN baseline, and  
+(2) a Neocognitron-inspired architecture with S-cells, C-cells, and lateral inhibition.  
+Both models are trained and evaluated on MNIST. Results include training curves,  
+confusion matrix, sample predictions, and a comparison of biological vs. modern architectures.
+
+
 ## Overview
 This project revisits the original 1980 Neocognitron and rebuilds it using modern computer vision methods.  
 The implementation includes:
